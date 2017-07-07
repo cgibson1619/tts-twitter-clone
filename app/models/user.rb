@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   # user model
   has_many :tweets
+  has_many :likes
   has_many :relationships
   has_many :friends, through: :relationships
 
